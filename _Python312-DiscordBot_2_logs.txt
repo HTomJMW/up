@@ -1,0 +1,946 @@
+    start_time, end_time = parse_time_slot(time_slot)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/Deployment/utils/time.py", line 21, in parse_time_slot
+    raise commands.BadArgument("❌ Hibás időformátum! Használd a **HH:MM-HH:MM** formátumot.")
+          ^^^^^^^^
+NameError: name 'commands' is not defined
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/ext/commands/bot.py", line 1366, in invoke
+    await ctx.command.invoke(ctx)
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/ext/commands/core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/ext/commands/core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: NameError: name 'commands' is not defined
+2025-02-03 20:39:56 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "aw_help" is not found
+Requirement already satisfied: discord.py in ./venv/lib/python3.12/site-packages (from -r requirements.txt (line 1)) (2.4.0)
+Requirement already satisfied: requests in ./venv/lib/python3.12/site-packages (from -r requirements.txt (line 2)) (2.32.3)
+Requirement already satisfied: python-dotenv in ./venv/lib/python3.12/site-packages (from -r requirements.txt (line 3)) (1.0.1)
+Requirement already satisfied: paramiko in ./venv/lib/python3.12/site-packages (from -r requirements.txt (line 4)) (3.5.0)
+Requirement already satisfied: pythonping in ./venv/lib/python3.12/site-packages (from -r requirements.txt (line 5)) (1.1.4)
+Requirement already satisfied: pillow in ./venv/lib/python3.12/site-packages (from -r requirements.txt (line 6)) (11.0.0)
+Requirement already satisfied: psutil in ./venv/lib/python3.12/site-packages (from -r requirements.txt (line 7)) (6.1.1)
+Requirement already satisfied: discord in ./venv/lib/python3.12/site-packages (from -r requirements.txt (line 8)) (2.3.2)
+Requirement already satisfied: aiosqlite in ./venv/lib/python3.12/site-packages (from -r requirements.txt (line 9)) (0.20.0)
+Requirement already satisfied: tenacity in ./venv/lib/python3.12/site-packages (from -r requirements.txt (line 10)) (9.0.0)
+Requirement already satisfied: aiohttp<4,>=3.7.4 in ./venv/lib/python3.12/site-packages (from discord.py->-r requirements.txt (line 1)) (3.11.10)
+Requirement already satisfied: charset-normalizer<4,>=2 in ./venv/lib/python3.12/site-packages (from requests->-r requirements.txt (line 2)) (3.4.0)
+Requirement already satisfied: idna<4,>=2.5 in ./venv/lib/python3.12/site-packages (from requests->-r requirements.txt (line 2)) (3.10)
+Requirement already satisfied: urllib3<3,>=1.21.1 in ./venv/lib/python3.12/site-packages (from requests->-r requirements.txt (line 2)) (2.2.3)
+Requirement already satisfied: certifi>=2017.4.17 in ./venv/lib/python3.12/site-packages (from requests->-r requirements.txt (line 2)) (2024.12.14)
+Requirement already satisfied: bcrypt>=3.2 in ./venv/lib/python3.12/site-packages (from paramiko->-r requirements.txt (line 4)) (4.2.1)
+Requirement already satisfied: cryptography>=3.3 in ./venv/lib/python3.12/site-packages (from paramiko->-r requirements.txt (line 4)) (44.0.0)
+Requirement already satisfied: pynacl>=1.5 in ./venv/lib/python3.12/site-packages (from paramiko->-r requirements.txt (line 4)) (1.5.0)
+Requirement already satisfied: typing_extensions>=4.0 in ./venv/lib/python3.12/site-packages (from aiosqlite->-r requirements.txt (line 9)) (4.12.2)
+Requirement already satisfied: aiohappyeyeballs>=2.3.0 in ./venv/lib/python3.12/site-packages (from aiohttp<4,>=3.7.4->discord.py->-r requirements.txt (line 1)) (2.4.4)
+Requirement already satisfied: aiosignal>=1.1.2 in ./venv/lib/python3.12/site-packages (from aiohttp<4,>=3.7.4->discord.py->-r requirements.txt (line 1)) (1.3.2)
+Requirement already satisfied: attrs>=17.3.0 in ./venv/lib/python3.12/site-packages (from aiohttp<4,>=3.7.4->discord.py->-r requirements.txt (line 1)) (24.2.0)
+Requirement already satisfied: frozenlist>=1.1.1 in ./venv/lib/python3.12/site-packages (from aiohttp<4,>=3.7.4->discord.py->-r requirements.txt (line 1)) (1.5.0)
+Requirement already satisfied: multidict<7.0,>=4.5 in ./venv/lib/python3.12/site-packages (from aiohttp<4,>=3.7.4->discord.py->-r requirements.txt (line 1)) (6.1.0)
+Requirement already satisfied: propcache>=0.2.0 in ./venv/lib/python3.12/site-packages (from aiohttp<4,>=3.7.4->discord.py->-r requirements.txt (line 1)) (0.2.1)
+Requirement already satisfied: yarl<2.0,>=1.17.0 in ./venv/lib/python3.12/site-packages (from aiohttp<4,>=3.7.4->discord.py->-r requirements.txt (line 1)) (1.18.3)
+Requirement already satisfied: cffi>=1.12 in ./venv/lib/python3.12/site-packages (from cryptography>=3.3->paramiko->-r requirements.txt (line 4)) (1.17.1)
+Requirement already satisfied: pycparser in ./venv/lib/python3.12/site-packages (from cffi>=1.12->cryptography>=3.3->paramiko->-r requirements.txt (line 4)) (2.22)
+[notice] A new release of pip is available: 24.3.1 -> 25.0
+[notice] To update, run: pip install --upgrade pip
+2025-02-03 20:55:24 INFO     discord.client logging in using static token
+✅ cogs.scheduler sikeresen betöltve
+✅ cogs.admin sikeresen betöltve
+✅ cogs.event_management sikeresen betöltve
+✅ cogs.voice_manager sikeresen betöltve
+✅ cogs.event_toggle sikeresen betöltve
+Verzió: 0.8.7
+✅ Összesen 5 kiterjesztés betöltve
+2025-02-03 20:55:25 INFO     discord.gateway Shard ID None has connected to Gateway (Session ID: a807604463e73deaa37ca09b3512278f).
+✅ Bejelentkezve mint Depo#3466 (ID: 1304580970229399592)
+✅ Parancsok szinkronizálva
+⛔ Adatbázis hiba: no such column: display_id
+⛔ Adatbázis hiba: no such column: display_id
+⛔ Adatbázis hiba: no such column: display_id
+⚠️ Hiba a display_id generálásakor: RetryError[<Future at 0x7fce4dece390 state=finished raised ValueError>]
+⛔ Adatbázis hiba: table schedule has no column named display_id
+⛔ Adatbázis hiba: table schedule has no column named display_id
+⛔ Adatbázis hiba: table schedule has no column named display_id
+2025-02-03 20:57:21 ERROR    discord.ext.commands.bot Ignoring exception in command add_event
+Traceback (most recent call last):
+  File "/home/pythonbot/Deployment/utils/database.py", line 10, in db_execute
+    await cursor.execute(query, params)
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/aiosqlite/cursor.py", line 48, in execute
+    await self._execute(self._cursor.execute, sql, parameters)
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/aiosqlite/cursor.py", line 40, in _execute
+    return await self._conn._execute(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 132, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 115, in run
+    result = function()
+             ^^^^^^^^^^
+sqlite3.OperationalError: table schedule has no column named display_id
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 114, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/Deployment/utils/database.py", line 18, in db_execute
+    await conn.rollback()
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 169, in rollback
+    await self._execute(self._conn.rollback)
+                        ^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 83, in _conn
+    raise ValueError("no active connection")
+ValueError: no active connection
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/ext/commands/core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/Deployment/cogs/event_management.py", line 51, in add_event
+    await self.db_execute(
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 189, in async_wrapped
+    return await copy(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 111, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 153, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/tenacity/_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/tenacity/__init__.py", line 419, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x7fce4dff9130 state=finished raised ValueError>]
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/ext/commands/bot.py", line 1366, in invoke
+    await ctx.command.invoke(ctx)
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/ext/commands/core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/ext/commands/core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: RetryError: RetryError[<Future at 0x7fce4dff9130 state=finished raised ValueError>]
+2025-02-03 20:57:39 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "add_server" is not found
+⛔ Adatbázis hiba: no such column: display_id
+⛔ Adatbázis hiba: no such column: display_id
+⛔ Adatbázis hiba: no such column: display_id
+⚠️ Hiba a display_id generálásakor: RetryError[<Future at 0x7fce4decdf10 state=finished raised ValueError>]
+⛔ Adatbázis hiba: table schedule has no column named display_id
+⛔ Adatbázis hiba: table schedule has no column named display_id
+⛔ Adatbázis hiba: table schedule has no column named display_id
+2025-02-03 20:58:55 ERROR    discord.ext.commands.bot Ignoring exception in command add_event
+Traceback (most recent call last):
+  File "/home/pythonbot/Deployment/utils/database.py", line 10, in db_execute
+    await cursor.execute(query, params)
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/aiosqlite/cursor.py", line 48, in execute
+    await self._execute(self._cursor.execute, sql, parameters)
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/aiosqlite/cursor.py", line 40, in _execute
+    return await self._conn._execute(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 132, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 115, in run
+    result = function()
+             ^^^^^^^^^^
+sqlite3.OperationalError: table schedule has no column named display_id
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 114, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/Deployment/utils/database.py", line 18, in db_execute
+    await conn.rollback()
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 169, in rollback
+    await self._execute(self._conn.rollback)
+                        ^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 83, in _conn
+    raise ValueError("no active connection")
+ValueError: no active connection
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/ext/commands/core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/Deployment/cogs/event_management.py", line 51, in add_event
+    await self.db_execute(
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 189, in async_wrapped
+    return await copy(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 111, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 153, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/tenacity/_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/tenacity/__init__.py", line 419, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x7fce4f850740 state=finished raised ValueError>]
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/ext/commands/bot.py", line 1366, in invoke
+    await ctx.command.invoke(ctx)
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/ext/commands/core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/ext/commands/core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: RetryError: RetryError[<Future at 0x7fce4f850740 state=finished raised ValueError>]
+⛔ Adatbázis hiba: no such column: display_id
+⛔ Adatbázis hiba: no such column: display_id
+⛔ Adatbázis hiba: no such column: display_id
+⚠️ Hiba a display_id generálásakor: RetryError[<Future at 0x7fce4e525670 state=finished raised ValueError>]
+⛔ Adatbázis hiba: table schedule has no column named display_id
+⛔ Adatbázis hiba: table schedule has no column named display_id
+⛔ Adatbázis hiba: table schedule has no column named display_id
+2025-02-03 21:01:59 ERROR    discord.ext.commands.bot Ignoring exception in command add_event
+Traceback (most recent call last):
+  File "/home/pythonbot/Deployment/utils/database.py", line 10, in db_execute
+    await cursor.execute(query, params)
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/aiosqlite/cursor.py", line 48, in execute
+    await self._execute(self._cursor.execute, sql, parameters)
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/aiosqlite/cursor.py", line 40, in _execute
+    return await self._conn._execute(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 132, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 115, in run
+    result = function()
+             ^^^^^^^^^^
+sqlite3.OperationalError: table schedule has no column named display_id
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 114, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/Deployment/utils/database.py", line 18, in db_execute
+    await conn.rollback()
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 169, in rollback
+    await self._execute(self._conn.rollback)
+                        ^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 83, in _conn
+    raise ValueError("no active connection")
+ValueError: no active connection
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/ext/commands/core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/Deployment/cogs/event_management.py", line 51, in add_event
+    await self.db_execute(
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 189, in async_wrapped
+    return await copy(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 111, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 153, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/tenacity/_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/tenacity/__init__.py", line 419, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x7fce4dffbf20 state=finished raised ValueError>]
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/ext/commands/bot.py", line 1366, in invoke
+    await ctx.command.invoke(ctx)
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/ext/commands/core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/ext/commands/core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: RetryError: RetryError[<Future at 0x7fce4dffbf20 state=finished raised ValueError>]
+⛔ Adatbázis hiba: no such column: display_id
+⛔ Adatbázis hiba: no such column: display_id
+⛔ Adatbázis hiba: no such column: display_id
+⚠️ Hiba a display_id generálásakor: RetryError[<Future at 0x7fce4de9c170 state=finished raised ValueError>]
+⛔ Adatbázis hiba: table schedule has no column named display_id
+⛔ Adatbázis hiba: table schedule has no column named display_id
+⛔ Adatbázis hiba: table schedule has no column named display_id
+2025-02-03 21:04:48 ERROR    discord.ext.commands.bot Ignoring exception in command add_event
+Traceback (most recent call last):
+  File "/home/pythonbot/Deployment/utils/database.py", line 10, in db_execute
+    await cursor.execute(query, params)
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/aiosqlite/cursor.py", line 48, in execute
+    await self._execute(self._cursor.execute, sql, parameters)
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/aiosqlite/cursor.py", line 40, in _execute
+    return await self._conn._execute(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 132, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 115, in run
+    result = function()
+             ^^^^^^^^^^
+sqlite3.OperationalError: table schedule has no column named display_id
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 114, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/Deployment/utils/database.py", line 18, in db_execute
+    await conn.rollback()
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 169, in rollback
+    await self._execute(self._conn.rollback)
+                        ^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 83, in _conn
+    raise ValueError("no active connection")
+ValueError: no active connection
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/ext/commands/core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/Deployment/cogs/event_management.py", line 51, in add_event
+    await self.db_execute(
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 189, in async_wrapped
+    return await copy(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 111, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 153, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/tenacity/_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/tenacity/__init__.py", line 419, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x7fce4e6417c0 state=finished raised ValueError>]
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/ext/commands/bot.py", line 1366, in invoke
+    await ctx.command.invoke(ctx)
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/ext/commands/core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/ext/commands/core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: RetryError: RetryError[<Future at 0x7fce4e6417c0 state=finished raised ValueError>]
+2025-02-03 22:11:03 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "add_event_" is not found
+2025-02-03 22:11:42 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "add_event_" is not found
+2025-02-03 22:12:05 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "remove_event_" is not found
+2025-02-03 22:12:27 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "remove_event_" is not found
+2025-02-03 22:14:46 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "add_event2" is not found
+2025-02-03 22:15:16 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "add_event2" is not found
+⛔ Adatbázis hiba: no such column: display_id
+⛔ Adatbázis hiba: no such column: display_id
+⛔ Adatbázis hiba: no such column: display_id
+⚠️ Váratlan hiba az esemény törlésekor: RetryError[<Future at 0x7fce4eb5cd40 state=finished raised ValueError>]
+2025-02-03 22:15:48 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "remove_event2" is not found
+2025-02-03 22:16:10 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "remove_event2" is not found
+2025-02-03 22:23:00 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "add_ev" is not found
+2025-02-03 22:23:15 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "add_ev" is not found
+2025-02-03 22:23:25 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "remove_ev" is not found
+2025-02-03 22:24:01 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "remove_ev" is not found
+2025-02-03 22:38:23 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "add_ev" is not found
+2025-02-03 22:38:37 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "add_ev" is not found
+2025-02-03 22:38:51 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "remove_ev" is not found
+2025-02-03 22:39:13 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "add_ev" is not found
+2025-02-03 22:39:24 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "remove_ev" is not found
+2025-02-03 22:39:35 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "remove_ev" is not found
+2025-02-03 22:41:08 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "add_ev" is not found
+2025-02-03 22:41:29 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "add_ev" is not found
+2025-02-03 22:43:18 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "remove_ev" is not found
+2025-02-03 22:43:29 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "remove_ev" is not found
+2025-02-03 22:43:42 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "add_ev" is not found
+2025-02-03 22:43:54 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "remove_ev" is not found
+2025-02-03 22:52:22 INFO     discord.gateway Shard ID None has successfully RESUMED session a807604463e73deaa37ca09b3512278f.
+2025-02-03 22:57:18 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "add_ev" is not found
+2025-02-03 22:57:50 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "add_ev" is not found
+🔄 Éjféli reset: Résztvevők törölve, újraregisztráció engedélyezve
+2025-02-03 23:05:35 ERROR    discord.ext.commands.bot Ignoring exception in command reset_schedule
+Traceback (most recent call last):
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/ext/commands/core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/Deployment/cogs/admin.py", line 53, in reset_schedule
+    await schedule_reset_task()
+          ^^^^^^^^^^^^^^^^^^^
+NameError: name 'schedule_reset_task' is not defined. Did you mean: 'self.schedule_reset_task'?
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/ext/commands/bot.py", line 1366, in invoke
+    await ctx.command.invoke(ctx)
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/ext/commands/core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/ext/commands/core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: NameError: name 'schedule_reset_task' is not defined
+2025-02-03 23:08:42 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "add_ev" is not found
+2025-02-03 23:10:29 ERROR    discord.ext.commands.bot Ignoring exception in command reset_schedule
+Traceback (most recent call last):
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/ext/commands/core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/Deployment/cogs/admin.py", line 53, in reset_schedule
+    await schedule_reset_task()
+          ^^^^^^^^^^^^^^^^^^^
+NameError: name 'schedule_reset_task' is not defined. Did you mean: 'self.schedule_reset_task'?
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/ext/commands/bot.py", line 1366, in invoke
+    await ctx.command.invoke(ctx)
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/ext/commands/core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/ext/commands/core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: NameError: name 'schedule_reset_task' is not defined
+2025-02-03 23:11:02 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "remove_ev" is not found
+2025-02-03 23:13:07 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "add_ev" is not found
+2025-02-03 23:16:21 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "add_ev" is not found
+2025-02-03 23:16:43 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "add_ev" is not found
+2025-02-03 23:16:52 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "add_ev" is not found
+2025-02-03 23:17:03 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "remove_ev" is not found
+2025-02-03 23:18:51 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "add_ev" is not found
+2025-02-03 23:23:06 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "add_ev" is not found
+2025-02-03 23:24:50 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "add_ev" is not found
+2025-02-03 23:24:58 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "add_ev" is not found
+2025-02-03 23:25:18 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "add_ev" is not found
+2025-02-03 23:25:46 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "add_ev" is not found
+2025-02-03 23:25:54 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "add_ev" is not found
+2025-02-03 23:27:22 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "add_ev" is not found
+2025-02-03 23:27:24 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "add_ev" is not found
+2025-02-03 23:27:30 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "add_ev" is not found
+2025-02-03 23:27:44 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "add_ev" is not found
+2025-02-03 23:28:05 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "remove_ev" is not found
+2025-02-03 23:28:13 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "add_ev" is not found
+2025-02-03 23:28:28 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "remove_ev" is not found
+2025-02-03 23:33:44 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "add_ev" is not found
+2025-02-03 23:39:21 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "add_ev" is not found
+2025-02-04 00:10:18 INFO     discord.gateway Shard ID None has successfully RESUMED session a807604463e73deaa37ca09b3512278f.
+2025-02-04 02:12:02 INFO     discord.gateway Shard ID None has successfully RESUMED session a807604463e73deaa37ca09b3512278f.
+2025-02-04 06:02:56 INFO     discord.gateway Shard ID None has successfully RESUMED session a807604463e73deaa37ca09b3512278f.
+2025-02-04 06:37:52 INFO     discord.gateway Shard ID None has successfully RESUMED session a807604463e73deaa37ca09b3512278f.
+2025-02-04 07:13:30 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "add_ev" is not found
+2025-02-04 07:22:40 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "add_ev" is not found
+2025-02-04 07:23:17 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "remove_ev" is not found
+2025-02-04 07:28:59 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "add_ev" is not found
+2025-02-04 07:41:55 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "add_ev" is not found
+2025-02-04 07:47:18 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "add_ev" is not found
+2025-02-04 07:58:51 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "add_ev" is not found
+2025-02-04 10:32:11 INFO     discord.gateway Shard ID None has successfully RESUMED session a807604463e73deaa37ca09b3512278f.
+2025-02-04 11:19:19 INFO     discord.gateway Shard ID None has successfully RESUMED session a807604463e73deaa37ca09b3512278f.
+2025-02-04 11:57:50 INFO     discord.gateway Shard ID None has successfully RESUMED session a807604463e73deaa37ca09b3512278f.
+2025-02-04 12:54:22 INFO     discord.gateway Shard ID None has successfully RESUMED session a807604463e73deaa37ca09b3512278f.
+2025-02-04 13:34:59 INFO     discord.gateway Shard ID None has successfully RESUMED session a807604463e73deaa37ca09b3512278f.
+2025-02-04 13:50:06 INFO     discord.gateway Shard ID None has successfully RESUMED session a807604463e73deaa37ca09b3512278f.
+2025-02-04 14:36:48 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "add_ev" is not found
+2025-02-04 14:37:02 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "remove_ev" is not found
+2025-02-04 14:37:53 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "add_ev" is not found
+2025-02-04 14:38:13 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "add_ev" is not found
+2025-02-04 14:38:22 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "remove_ev" is not found
+2025-02-04 14:38:32 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "remove_ev" is not found
+2025-02-04 15:06:51 INFO     discord.gateway Shard ID None has successfully RESUMED session a807604463e73deaa37ca09b3512278f.
+2025-02-04 18:16:22 INFO     discord.gateway Shard ID None has successfully RESUMED session a807604463e73deaa37ca09b3512278f.
+2025-02-04 18:23:06 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "add_ev" is not found
+2025-02-04 18:25:09 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "remove_ev" is not found
+2025-02-04 18:25:58 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "add_ev" is not found
+2025-02-04 18:28:41 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "add_ev" is not found
+⛔ Adatbázis hiba: no such column: end_time
+⛔ Adatbázis hiba: no such column: end_time
+⛔ Adatbázis hiba: no such column: end_time
+⛔ Adatbázis hiba: no such column: end_time
+⛔ Adatbázis hiba: no such column: end_time
+⚠️ Hiba hangcsatorna kezelésekor: RetryError[<Future at 0x7fce4f850740 state=finished raised ValueError>]
+⛔ Adatbázis hiba: no such column: end_time
+⚠️ Hiba hangcsatorna kezelésekor: RetryError[<Future at 0x7fce4eaf0920 state=finished raised ValueError>]
+2025-02-04 18:36:28 ERROR    discord.ext.commands.bot Ignoring exception in command reset_schedule
+Traceback (most recent call last):
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/ext/commands/core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/Deployment/cogs/admin.py", line 53, in reset_schedule
+    await schedule_reset_task()
+          ^^^^^^^^^^^^^^^^^^^
+NameError: name 'schedule_reset_task' is not defined. Did you mean: 'self.schedule_reset_task'?
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/ext/commands/bot.py", line 1366, in invoke
+    await ctx.command.invoke(ctx)
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/ext/commands/core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/ext/commands/core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: NameError: name 'schedule_reset_task' is not defined
+2025-02-04 18:36:51 INFO     discord.gateway Shard ID None has successfully RESUMED session a807604463e73deaa37ca09b3512278f.
+2025-02-04 18:36:51 ERROR    discord.ext.commands.bot Ignoring exception in command reset_schedule
+Traceback (most recent call last):
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/ext/commands/core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/Deployment/cogs/admin.py", line 53, in reset_schedule
+    await schedule_reset_task()
+          ^^^^^^^^^^^^^^^^^^^
+NameError: name 'schedule_reset_task' is not defined. Did you mean: 'self.schedule_reset_task'?
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/ext/commands/bot.py", line 1366, in invoke
+    await ctx.command.invoke(ctx)
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/ext/commands/core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/ext/commands/core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: NameError: name 'schedule_reset_task' is not defined
+2025-02-04 18:53:29 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "add_ev" is not found
+2025-02-04 19:25:34 INFO     discord.gateway Shard ID None has successfully RESUMED session a807604463e73deaa37ca09b3512278f.
+2025-02-04 19:28:33 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "aw_help" is not found
+2025-02-04 19:31:58 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "aw_help" is not found
+2025-02-04 19:53:19 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "aw_help" is not found
+⛔ Adatbázis hiba: no such column: display_id
+⛔ Adatbázis hiba: no such column: display_id
+⛔ Adatbázis hiba: no such column: display_id
+2025-02-04 19:53:39 ERROR    discord.ext.commands.bot Ignoring exception in command show_schedule
+Traceback (most recent call last):
+  File "/home/pythonbot/Deployment/utils/database.py", line 10, in db_execute
+    await cursor.execute(query, params)
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/aiosqlite/cursor.py", line 48, in execute
+    await self._execute(self._cursor.execute, sql, parameters)
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/aiosqlite/cursor.py", line 40, in _execute
+    return await self._conn._execute(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 132, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 115, in run
+    result = function()
+             ^^^^^^^^^^
+sqlite3.OperationalError: no such column: display_id
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 114, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/Deployment/utils/database.py", line 18, in db_execute
+    await conn.rollback()
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 169, in rollback
+    await self._execute(self._conn.rollback)
+                        ^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 83, in _conn
+    raise ValueError("no active connection")
+ValueError: no active connection
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/ext/commands/core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/Deployment/cogs/event_management.py", line 173, in show_schedule
+    records = await self.db_execute(
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 189, in async_wrapped
+    return await copy(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 111, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 153, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/tenacity/_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/tenacity/__init__.py", line 419, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x7fce4de24290 state=finished raised ValueError>]
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/ext/commands/bot.py", line 1366, in invoke
+    await ctx.command.invoke(ctx)
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/ext/commands/core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/ext/commands/core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: RetryError: RetryError[<Future at 0x7fce4de24290 state=finished raised ValueError>]
+⛔ Adatbázis hiba: no such column: display_id
+⛔ Adatbázis hiba: no such column: display_id
+⛔ Adatbázis hiba: no such column: display_id
+2025-02-04 20:11:16 ERROR    discord.ext.commands.bot Ignoring exception in command show_schedule
+Traceback (most recent call last):
+  File "/home/pythonbot/Deployment/utils/database.py", line 10, in db_execute
+    await cursor.execute(query, params)
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/aiosqlite/cursor.py", line 48, in execute
+    await self._execute(self._cursor.execute, sql, parameters)
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/aiosqlite/cursor.py", line 40, in _execute
+    return await self._conn._execute(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 132, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 115, in run
+    result = function()
+             ^^^^^^^^^^
+sqlite3.OperationalError: no such column: display_id
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 114, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/Deployment/utils/database.py", line 18, in db_execute
+    await conn.rollback()
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 169, in rollback
+    await self._execute(self._conn.rollback)
+                        ^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 83, in _conn
+    raise ValueError("no active connection")
+ValueError: no active connection
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/ext/commands/core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/Deployment/cogs/event_management.py", line 173, in show_schedule
+    records = await self.db_execute(
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 189, in async_wrapped
+    return await copy(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 111, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 153, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/tenacity/_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/tenacity/__init__.py", line 419, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x7fce4de3fec0 state=finished raised ValueError>]
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/ext/commands/bot.py", line 1366, in invoke
+    await ctx.command.invoke(ctx)
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/ext/commands/core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/ext/commands/core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: RetryError: RetryError[<Future at 0x7fce4de3fec0 state=finished raised ValueError>]
+2025-02-04 20:11:29 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "aw_help" is not found
+2025-02-04 20:14:48 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "aw_help" is not found
+2025-02-04 20:18:55 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "add_ev" is not found
+2025-02-04 20:19:19 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "add_ev" is not found
+2025-02-04 20:25:00 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "add_ev" is not found
+⛔ Adatbázis hiba: no such column: display_id
+⛔ Adatbázis hiba: no such column: display_id
+⛔ Adatbázis hiba: no such column: display_id
+⚠️ Váratlan hiba az esemény törlésekor: RetryError[<Future at 0x7fce4dece810 state=finished raised ValueError>]
+2025-02-04 20:25:29 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "remove_ev" is not found
+2025-02-04 20:25:43 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "add_ev" is not found
+2025-02-04 20:26:02 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "remove_ev" is not found
+2025-02-04 20:26:30 ERROR    discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "add_ev" is not found
+Requirement already satisfied: discord.py in ./venv/lib/python3.12/site-packages (from -r requirements.txt (line 1)) (2.4.0)
+Requirement already satisfied: requests in ./venv/lib/python3.12/site-packages (from -r requirements.txt (line 2)) (2.32.3)
+Requirement already satisfied: python-dotenv in ./venv/lib/python3.12/site-packages (from -r requirements.txt (line 3)) (1.0.1)
+Requirement already satisfied: paramiko in ./venv/lib/python3.12/site-packages (from -r requirements.txt (line 4)) (3.5.0)
+Requirement already satisfied: pythonping in ./venv/lib/python3.12/site-packages (from -r requirements.txt (line 5)) (1.1.4)
+Requirement already satisfied: pillow in ./venv/lib/python3.12/site-packages (from -r requirements.txt (line 6)) (11.0.0)
+Requirement already satisfied: psutil in ./venv/lib/python3.12/site-packages (from -r requirements.txt (line 7)) (6.1.1)
+Requirement already satisfied: discord in ./venv/lib/python3.12/site-packages (from -r requirements.txt (line 8)) (2.3.2)
+Requirement already satisfied: aiosqlite in ./venv/lib/python3.12/site-packages (from -r requirements.txt (line 9)) (0.20.0)
+Requirement already satisfied: tenacity in ./venv/lib/python3.12/site-packages (from -r requirements.txt (line 10)) (9.0.0)
+Requirement already satisfied: aiohttp<4,>=3.7.4 in ./venv/lib/python3.12/site-packages (from discord.py->-r requirements.txt (line 1)) (3.11.10)
+Requirement already satisfied: charset-normalizer<4,>=2 in ./venv/lib/python3.12/site-packages (from requests->-r requirements.txt (line 2)) (3.4.0)
+Requirement already satisfied: idna<4,>=2.5 in ./venv/lib/python3.12/site-packages (from requests->-r requirements.txt (line 2)) (3.10)
+Requirement already satisfied: urllib3<3,>=1.21.1 in ./venv/lib/python3.12/site-packages (from requests->-r requirements.txt (line 2)) (2.2.3)
+Requirement already satisfied: certifi>=2017.4.17 in ./venv/lib/python3.12/site-packages (from requests->-r requirements.txt (line 2)) (2024.12.14)
+Requirement already satisfied: bcrypt>=3.2 in ./venv/lib/python3.12/site-packages (from paramiko->-r requirements.txt (line 4)) (4.2.1)
+Requirement already satisfied: cryptography>=3.3 in ./venv/lib/python3.12/site-packages (from paramiko->-r requirements.txt (line 4)) (44.0.0)
+Requirement already satisfied: pynacl>=1.5 in ./venv/lib/python3.12/site-packages (from paramiko->-r requirements.txt (line 4)) (1.5.0)
+Requirement already satisfied: typing_extensions>=4.0 in ./venv/lib/python3.12/site-packages (from aiosqlite->-r requirements.txt (line 9)) (4.12.2)
+Requirement already satisfied: aiohappyeyeballs>=2.3.0 in ./venv/lib/python3.12/site-packages (from aiohttp<4,>=3.7.4->discord.py->-r requirements.txt (line 1)) (2.4.4)
+Requirement already satisfied: aiosignal>=1.1.2 in ./venv/lib/python3.12/site-packages (from aiohttp<4,>=3.7.4->discord.py->-r requirements.txt (line 1)) (1.3.2)
+Requirement already satisfied: attrs>=17.3.0 in ./venv/lib/python3.12/site-packages (from aiohttp<4,>=3.7.4->discord.py->-r requirements.txt (line 1)) (24.2.0)
+Requirement already satisfied: frozenlist>=1.1.1 in ./venv/lib/python3.12/site-packages (from aiohttp<4,>=3.7.4->discord.py->-r requirements.txt (line 1)) (1.5.0)
+Requirement already satisfied: multidict<7.0,>=4.5 in ./venv/lib/python3.12/site-packages (from aiohttp<4,>=3.7.4->discord.py->-r requirements.txt (line 1)) (6.1.0)
+Requirement already satisfied: propcache>=0.2.0 in ./venv/lib/python3.12/site-packages (from aiohttp<4,>=3.7.4->discord.py->-r requirements.txt (line 1)) (0.2.1)
+Requirement already satisfied: yarl<2.0,>=1.17.0 in ./venv/lib/python3.12/site-packages (from aiohttp<4,>=3.7.4->discord.py->-r requirements.txt (line 1)) (1.18.3)
+Requirement already satisfied: cffi>=1.12 in ./venv/lib/python3.12/site-packages (from cryptography>=3.3->paramiko->-r requirements.txt (line 4)) (1.17.1)
+Requirement already satisfied: pycparser in ./venv/lib/python3.12/site-packages (from cffi>=1.12->cryptography>=3.3->paramiko->-r requirements.txt (line 4)) (2.22)
+[notice] A new release of pip is available: 24.3.1 -> 25.0
+[notice] To update, run: pip install --upgrade pip
+2025-02-04 20:44:00 INFO     discord.client logging in using static token
+2025-02-04 20:44:00,005 - discord.client - INFO - logging in using static token
+2025-02-04 20:44:00,635 - ARWatch - INFO - SchedulerCore Cog sikeresen hozzáadva.
+2025-02-04 20:44:00,635 - ARWatch - INFO - cogs.scheduler sikeresen betöltve
+2025-02-04 20:44:00,638 - ARWatch - INFO - Admin Cog sikeresen hozzáadva.
+2025-02-04 20:44:00,638 - ARWatch - INFO - cogs.admin sikeresen betöltve
+2025-02-04 20:44:00,642 - ARWatch - INFO - cogs.event_management sikeresen betöltve
+2025-02-04 20:44:00,645 - ARWatch - INFO - VoiceManager Cog sikeresen hozzáadva.
+2025-02-04 20:44:00,645 - ARWatch - INFO - cogs.voice_manager sikeresen betöltve
+2025-02-04 20:44:00,648 - ARWatch - INFO - EventToggle Cog sikeresen hozzáadva.
+2025-02-04 20:44:00,648 - ARWatch - INFO - cogs.event_toggle sikeresen betöltve
+2025-02-04 20:44:00,650 - ARWatch - INFO - cogs.help sikeresen betöltve
+2025-02-04 20:44:00,650 - ARWatch - INFO - 
+Verzió: 0.9.3
+2025-02-04 20:44:00,650 - ARWatch - INFO - Összesen 6 kiterjesztés betöltve
+2025-02-04 20:44:00 INFO     discord.gateway Shard ID None has connected to Gateway (Session ID: 2527b79828820e9cb239b92b74695a70).
+2025-02-04 20:44:00,974 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 2527b79828820e9cb239b92b74695a70).
+2025-02-04 20:44:02,992 - ARWatch - INFO - 
+Bejelentkezve mint Depo#3466 (ID: 1304580970229399592)
+2025-02-04 20:44:02,995 - ARWatch - INFO - Adatbázis tábla létrehozva/frissítve
+2025-02-04 20:44:03,231 - ARWatch - INFO - Parancsok szinkronizálva
+2025-02-04 20:44:06,826 - ARWatch - ERROR - Adatbázis hiba: no such column: end_time
+2025-02-04 20:44:08,831 - ARWatch - ERROR - Adatbázis hiba: no such column: end_time
+2025-02-04 20:44:10,836 - ARWatch - ERROR - Adatbázis hiba: no such column: end_time
+2025-02-04 20:44:10,837 - ARWatch - ERROR - Hiba hangcsatorna kezelésekor: RetryError[<Future at 0x7f0c42f267b0 state=finished raised ValueError>]
+2025-02-04 20:49:59,072 - ARWatch - ERROR - Adatbázis hiba: no such column: display_id
+2025-02-04 20:50:01,076 - ARWatch - ERROR - Adatbázis hiba: no such column: display_id
+2025-02-04 20:50:03,080 - ARWatch - ERROR - Adatbázis hiba: no such column: display_id
+2025-02-04 20:50:03,081 - ARWatch - WARNING - Hiba a display_id generálásakor: RetryError[<Future at 0x7f0c43ac30e0 state=finished raised ValueError>]
+2025-02-04 20:50:03,083 - ARWatch - ERROR - Adatbázis hiba: table schedule has no column named display_id
+2025-02-04 20:50:05,087 - ARWatch - ERROR - Adatbázis hiba: table schedule has no column named display_id
+2025-02-04 20:50:07,092 - ARWatch - ERROR - Adatbázis hiba: table schedule has no column named display_id
+2025-02-04 20:50:07,092 - ARWatch - ERROR - Váratlan hiba: RetryError[<Future at 0x7f0c424c6bd0 state=finished raised ValueError>]
+Requirement already satisfied: discord.py in ./venv/lib/python3.12/site-packages (from -r requirements.txt (line 1)) (2.4.0)
+Requirement already satisfied: requests in ./venv/lib/python3.12/site-packages (from -r requirements.txt (line 2)) (2.32.3)
+Requirement already satisfied: python-dotenv in ./venv/lib/python3.12/site-packages (from -r requirements.txt (line 3)) (1.0.1)
+Requirement already satisfied: paramiko in ./venv/lib/python3.12/site-packages (from -r requirements.txt (line 4)) (3.5.0)
+Requirement already satisfied: pythonping in ./venv/lib/python3.12/site-packages (from -r requirements.txt (line 5)) (1.1.4)
+Requirement already satisfied: pillow in ./venv/lib/python3.12/site-packages (from -r requirements.txt (line 6)) (11.0.0)
+Requirement already satisfied: psutil in ./venv/lib/python3.12/site-packages (from -r requirements.txt (line 7)) (6.1.1)
+Requirement already satisfied: discord in ./venv/lib/python3.12/site-packages (from -r requirements.txt (line 8)) (2.3.2)
+Requirement already satisfied: aiosqlite in ./venv/lib/python3.12/site-packages (from -r requirements.txt (line 9)) (0.20.0)
+Requirement already satisfied: tenacity in ./venv/lib/python3.12/site-packages (from -r requirements.txt (line 10)) (9.0.0)
+Requirement already satisfied: aiohttp<4,>=3.7.4 in ./venv/lib/python3.12/site-packages (from discord.py->-r requirements.txt (line 1)) (3.11.10)
+Requirement already satisfied: charset-normalizer<4,>=2 in ./venv/lib/python3.12/site-packages (from requests->-r requirements.txt (line 2)) (3.4.0)
+Requirement already satisfied: idna<4,>=2.5 in ./venv/lib/python3.12/site-packages (from requests->-r requirements.txt (line 2)) (3.10)
+Requirement already satisfied: urllib3<3,>=1.21.1 in ./venv/lib/python3.12/site-packages (from requests->-r requirements.txt (line 2)) (2.2.3)
+Requirement already satisfied: certifi>=2017.4.17 in ./venv/lib/python3.12/site-packages (from requests->-r requirements.txt (line 2)) (2024.12.14)
+Requirement already satisfied: bcrypt>=3.2 in ./venv/lib/python3.12/site-packages (from paramiko->-r requirements.txt (line 4)) (4.2.1)
+Requirement already satisfied: cryptography>=3.3 in ./venv/lib/python3.12/site-packages (from paramiko->-r requirements.txt (line 4)) (44.0.0)
+Requirement already satisfied: pynacl>=1.5 in ./venv/lib/python3.12/site-packages (from paramiko->-r requirements.txt (line 4)) (1.5.0)
+Requirement already satisfied: typing_extensions>=4.0 in ./venv/lib/python3.12/site-packages (from aiosqlite->-r requirements.txt (line 9)) (4.12.2)
+Requirement already satisfied: aiohappyeyeballs>=2.3.0 in ./venv/lib/python3.12/site-packages (from aiohttp<4,>=3.7.4->discord.py->-r requirements.txt (line 1)) (2.4.4)
+Requirement already satisfied: aiosignal>=1.1.2 in ./venv/lib/python3.12/site-packages (from aiohttp<4,>=3.7.4->discord.py->-r requirements.txt (line 1)) (1.3.2)
+Requirement already satisfied: attrs>=17.3.0 in ./venv/lib/python3.12/site-packages (from aiohttp<4,>=3.7.4->discord.py->-r requirements.txt (line 1)) (24.2.0)
+Requirement already satisfied: frozenlist>=1.1.1 in ./venv/lib/python3.12/site-packages (from aiohttp<4,>=3.7.4->discord.py->-r requirements.txt (line 1)) (1.5.0)
+Requirement already satisfied: multidict<7.0,>=4.5 in ./venv/lib/python3.12/site-packages (from aiohttp<4,>=3.7.4->discord.py->-r requirements.txt (line 1)) (6.1.0)
+Requirement already satisfied: propcache>=0.2.0 in ./venv/lib/python3.12/site-packages (from aiohttp<4,>=3.7.4->discord.py->-r requirements.txt (line 1)) (0.2.1)
+Requirement already satisfied: yarl<2.0,>=1.17.0 in ./venv/lib/python3.12/site-packages (from aiohttp<4,>=3.7.4->discord.py->-r requirements.txt (line 1)) (1.18.3)
+Requirement already satisfied: cffi>=1.12 in ./venv/lib/python3.12/site-packages (from cryptography>=3.3->paramiko->-r requirements.txt (line 4)) (1.17.1)
+Requirement already satisfied: pycparser in ./venv/lib/python3.12/site-packages (from cffi>=1.12->cryptography>=3.3->paramiko->-r requirements.txt (line 4)) (2.22)
+[notice] A new release of pip is available: 24.3.1 -> 25.0
+[notice] To update, run: pip install --upgrade pip
+2025-02-04 20:54:35 INFO     discord.client logging in using static token
+2025-02-04 20:54:35,556 - discord.client - INFO - logging in using static token
+2025-02-04 20:54:36,117 - ARWatch - INFO - SchedulerCore Cog sikeresen hozzáadva.
+2025-02-04 20:54:36,117 - ARWatch - INFO - cogs.scheduler sikeresen betöltve
+2025-02-04 20:54:36,120 - ARWatch - INFO - Admin Cog sikeresen hozzáadva.
+2025-02-04 20:54:36,120 - ARWatch - INFO - cogs.admin sikeresen betöltve
+2025-02-04 20:54:36,122 - ARWatch - INFO - cogs.event_management sikeresen betöltve
+2025-02-04 20:54:36,124 - ARWatch - INFO - VoiceManager Cog sikeresen hozzáadva.
+2025-02-04 20:54:36,124 - ARWatch - INFO - cogs.voice_manager sikeresen betöltve
+2025-02-04 20:54:36,127 - ARWatch - INFO - EventToggle Cog sikeresen hozzáadva.
+2025-02-04 20:54:36,127 - ARWatch - INFO - cogs.event_toggle sikeresen betöltve
+2025-02-04 20:54:36,128 - ARWatch - INFO - cogs.help sikeresen betöltve
+2025-02-04 20:54:36,128 - ARWatch - INFO - 
+Verzió: 0.9.3
+2025-02-04 20:54:36,128 - ARWatch - INFO - Összesen 6 kiterjesztés betöltve
+2025-02-04 20:54:36 INFO     discord.gateway Shard ID None has connected to Gateway (Session ID: e9ff4ce61dd4e903430d716008588dff).
+2025-02-04 20:54:36,471 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: e9ff4ce61dd4e903430d716008588dff).
+2025-02-04 20:54:38,484 - ARWatch - INFO - 
+Bejelentkezve mint Depo#3466 (ID: 1304580970229399592)
+2025-02-04 20:54:38,570 - ARWatch - INFO - Adatbázis tábla létrehozva/frissítve
+2025-02-04 20:54:38,746 - ARWatch - INFO - Parancsok szinkronizálva
+2025-02-04 20:58:17,733 - ARWatch - INFO - Esemény lezárva: EU/TR TMT | THEMADTURK (18:00-21:00)
+2025-02-04 20:58:31,523 - ARWatch - INFO - Esemény lezárva: [TAW] SEIZE & SECURE (17:30-20:30)
+2025-02-04 21:05:25,700 - ARWatch - INFO - Üzenet törölve: 1336442151806046259
+2025-02-04 21:10:00,379 - ARWatch - INFO - Hangcsatorna létrehozva: [MAK] Szerver
+2025-02-04 21:20:00,045 - ARWatch - INFO - Esemény lezárva: [MAK] Szerver (22:10-22:20)
+2025-02-04 21:50:00,388 - ARWatch - INFO - Hangcsatorna törölve: [MAK] Szerver
+2025-02-04 21:50:00,862 - ARWatch - INFO - Esemény lezárva: [MAK] Szerver (22:40-22:50)
+2025-02-04 23:00:00,017 - ARWatch - INFO - Éjféli reset: Résztvevők törölve, újraregisztráció engedélyezve
+2025-02-04 23:00:53,647 - ARWatch - INFO - Üzenet törölve: 1336442773234126999
+2025-02-04 23:24:15 INFO     discord.gateway Shard ID None has successfully RESUMED session e9ff4ce61dd4e903430d716008588dff.
+2025-02-04 23:24:15,558 - discord.gateway - INFO - Shard ID None has successfully RESUMED session e9ff4ce61dd4e903430d716008588dff.
+2025-02-05 00:43:27 INFO     discord.gateway Shard ID None has successfully RESUMED session e9ff4ce61dd4e903430d716008588dff.
+2025-02-05 00:43:27,283 - discord.gateway - INFO - Shard ID None has successfully RESUMED session e9ff4ce61dd4e903430d716008588dff.
+2025-02-05 02:43:33 INFO     discord.gateway Shard ID None has successfully RESUMED session e9ff4ce61dd4e903430d716008588dff.
+2025-02-05 02:43:33,035 - discord.gateway - INFO - Shard ID None has successfully RESUMED session e9ff4ce61dd4e903430d716008588dff.
+2025-02-05 05:51:31 INFO     discord.gateway Shard ID None has successfully RESUMED session e9ff4ce61dd4e903430d716008588dff.
+2025-02-05 05:51:31,897 - discord.gateway - INFO - Shard ID None has successfully RESUMED session e9ff4ce61dd4e903430d716008588dff.
+2025-02-05 07:55:22 WARNING  discord.http We are being rate limited. PATCH https://discord.com/api/v10/channels/1332279624868302859/messages/1336440773947818107 responded with 429. Retrying in 0.43 seconds.
+2025-02-05 07:55:22,386 - discord.http - WARNING - We are being rate limited. PATCH https://discord.com/api/v10/channels/1332279624868302859/messages/1336440773947818107 responded with 429. Retrying in 0.43 seconds.
+2025-02-05 07:55:25 WARNING  discord.http We are being rate limited. PATCH https://discord.com/api/v10/channels/1332279624868302859/messages/1336440773947818107 responded with 429. Retrying in 3.42 seconds.
+2025-02-05 07:55:25,399 - discord.http - WARNING - We are being rate limited. PATCH https://discord.com/api/v10/channels/1332279624868302859/messages/1336440773947818107 responded with 429. Retrying in 3.42 seconds.
+2025-02-05 07:55:29 ERROR    discord.ui.view Ignoring exception in view <View timeout=None children=3> for item <LeaveButton style=<ButtonStyle.danger: 4> url=None disabled=False label='❌ Kilépés' emoji=None row=None sku_id=None>
+Traceback (most recent call last):
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/ui/view.py", line 430, in _scheduled_task
+    await item.callback(interaction)
+  File "/home/pythonbot/Deployment/components/buttons.py", line 161, in callback
+    await interaction.response.defer()
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/interactions.py", line 709, in defer
+    await adapter.create_interaction_response(
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/webhook/async_.py", line 221, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-02-05 07:55:29,229 - discord.ui.view - ERROR - Ignoring exception in view <View timeout=None children=3> for item <LeaveButton style=<ButtonStyle.danger: 4> url=None disabled=False label='❌ Kilépés' emoji=None row=None sku_id=None>
+Traceback (most recent call last):
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/ui/view.py", line 430, in _scheduled_task
+    await item.callback(interaction)
+  File "/home/pythonbot/Deployment/components/buttons.py", line 161, in callback
+    await interaction.response.defer()
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/interactions.py", line 709, in defer
+    await adapter.create_interaction_response(
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/webhook/async_.py", line 221, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-02-05 07:55:31 WARNING  discord.http We are being rate limited. PATCH https://discord.com/api/v10/channels/1332279624868302859/messages/1336440773947818107 responded with 429. Retrying in 2.92 seconds.
+2025-02-05 07:55:31,904 - discord.http - WARNING - We are being rate limited. PATCH https://discord.com/api/v10/channels/1332279624868302859/messages/1336440773947818107 responded with 429. Retrying in 2.92 seconds.
+2025-02-05 07:55:35,257 - ARWatch - ERROR - Csatlakozási hiba: 404 Not Found (error code: 10062): Unknown interaction
+     
+025-02-05 07:55:35 ERROR    discord.ui.view Ignoring exception in view <View timeout=None children=3> for item <JoinButton style=<ButtonStyle.success: 3> url=None disabled=False label='✅ Csatlakozás' emoji=None row=None sku_id=None>
+Traceback (most recent call last):
+  File "/home/pythonbot/Deployment/components/buttons.py", line 51, in callback
+    await interaction.response.defer()
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/interactions.py", line 709, in defer
+    await adapter.create_interaction_response(
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/webhook/async_.py", line 221, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/ui/view.py", line 430, in _scheduled_task
+    await item.callback(interaction)
+  File "/home/pythonbot/Deployment/components/buttons.py", line 55, in callback
+    await interaction.response.send_message(
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/interactions.py", line 855, in send_message
+    await adapter.create_interaction_response(
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/webhook/async_.py", line 221, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-02-05 07:55:35,393 - discord.ui.view - ERROR - Ignoring exception in view <View timeout=None children=3> for item <JoinButton style=<ButtonStyle.success: 3> url=None disabled=False label='✅ Csatlakozás' emoji=None row=None sku_id=None>
+Traceback (most recent call last):
+  File "/home/pythonbot/Deployment/components/buttons.py", line 51, in callback
+    await interaction.response.defer()
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/interactions.py", line 709, in defer
+    await adapter.create_interaction_response(
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/webhook/async_.py", line 221, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/ui/view.py", line 430, in _scheduled_task
+    await item.callback(interaction)
+  File "/home/pythonbot/Deployment/components/buttons.py", line 55, in callback
+    await interaction.response.send_message(
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/interactions.py", line 855, in send_message
+    await adapter.create_interaction_response(
+  File "/home/pythonbot/venv/lib/python3.12/site-packages/discord/webhook/async_.py", line 221, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-02-05 08:56:26 INFO     discord.gateway Shard ID None has successfully RESUMED session e9ff4ce61dd4e903430d716008588dff.
+2025-02-05 08:56:26,013 - discord.gateway - INFO - Shard ID None has successfully RESUMED session e9ff4ce61dd4e903430d716008588dff.
+2025-02-05 09:27:28 INFO     discord.gateway Shard ID None has successfully RESUMED session e9ff4ce61dd4e903430d716008588dff.
+2025-02-05 09:27:28,406 - discord.gateway - INFO - Shard ID None has successfully RESUMED session e9ff4ce61dd4e903430d716008588dff.
+2025-02-05 11:07:54 INFO     discord.gateway Shard ID None has successfully RESUMED session e9ff4ce61dd4e903430d716008588dff.
+2025-02-05 11:07:54,815 - discord.gateway - INFO - Shard ID None has successfully RESUMED session e9ff4ce61dd4e903430d716008588dff.
+2025-02-05 12:26:52 INFO     discord.gateway Shard ID None has successfully RESUMED session e9ff4ce61dd4e903430d716008588dff.
+2025-02-05 12:26:52,450 - discord.gateway - INFO - Shard ID None has successfully RESUMED session e9ff4ce61dd4e903430d716008588dff.
+2025-02-05 12:42:56 INFO     discord.gateway Shard ID None has successfully RESUMED session e9ff4ce61dd4e903430d716008588dff.
+2025-02-05 12:42:56,054 - discord.gateway - INFO - Shard ID None has successfully RESUMED session e9ff4ce61dd4e903430d716008588dff.
+2025-02-05 13:05:45 INFO     discord.gateway Shard ID None has successfully RESUMED session e9ff4ce61dd4e903430d716008588dff.
+2025-02-05 13:05:45,154 - discord.gateway - INFO - Shard ID None has successfully RESUMED session e9ff4ce61dd4e903430d716008588dff.
+2025-02-05 14:20:31 INFO     discord.gateway Shard ID None has successfully RESUMED session e9ff4ce61dd4e903430d716008588dff.
+2025-02-05 14:20:31,758 - discord.gateway - INFO - Shard ID None has successfully RESUMED session e9ff4ce61dd4e903430d716008588dff.
+2025-02-05 15:56:38 INFO     discord.gateway Shard ID None has successfully RESUMED session e9ff4ce61dd4e903430d716008588dff.
+2025-02-05 15:56:38,789 - discord.gateway - INFO - Shard ID None has successfully RESUMED session e9ff4ce61dd4e903430d716008588dff.
